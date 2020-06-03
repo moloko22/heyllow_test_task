@@ -1,10 +1,12 @@
 import React from 'react';
+
 import './App.css';
+import PageForm from "./components/PageForm/PageForm";
 
 function App() {
   return (
-    <div className="App">
-      <h3>Hello World!</h3>
+    <div className="app">
+        <PageForm/>
     </div>
   );
 }

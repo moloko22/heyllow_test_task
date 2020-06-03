@@ -1,0 +1,11 @@
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.app {
+    font-family: Open Sans;
+    position: relative;
+    width: 1440px;
+    min-height: 1682px;
+}
