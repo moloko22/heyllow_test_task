@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './PageForm.css';
+import Form from "../../containers/Form/Form";
 function PageForm (){
     return (
         <div className={'page_form'}>
@@ -14,6 +15,7 @@ function PageForm (){
                     <li>3</li>
                 </ul>
             </div>
+            <Form />
         </div>
     );
 }
