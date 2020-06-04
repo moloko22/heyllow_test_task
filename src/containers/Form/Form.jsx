@@ -3,18 +3,6 @@ import React, {Component} from 'react';
 import './Form.css';
 import InputFile from "../../components/InputFile/InputFile";
 class Form extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            filesLength: undefined,
-        }
-    }
-
-    onChange(length){
-        this.setState({
-            filesLength: length,
-        });
-    }
     render() {
         return (
             <section className={'form_step3'}>
@@ -47,7 +35,8 @@ class Form extends Component {
                         <InputFile/>
                     </div>
                     <div>
-                        <button onSubmit={(e) => {
+                        <button type={'submit'}
+                            onClick={(e) => {
                             e.preventDefault();
                             console.log('Отправлено!')
                         }}>Submit</button>
